@@ -1,50 +1,78 @@
 <script>
-	import successkid from 'images/successkid.jpg';
+	import { onMount } from 'svelte';
+	import { TwitterIcon, GithubIcon, TwitchIcon, YoutubeIcon } from 'svelte-feather-icons'
+
+	const titles = ['software engineer', "husband", "dog dad", "former aspiring pastor", "youtuber", "livestreamer", "outdoor lover"];
+	let currentTitle = titles[0];
+	let index = 0;
+
+	const loopThroughTitles = () => {
+		setTimeout(() => {
+			if (index <= titles.length - 1) {
+				currentTitle = titles[index]
+				index++
+				loopThroughTitles();
+			} else {
+				index = 0;
+				loopThroughTitles();
+			}
+		}, 1000)
+
+	}
+
+	onMount(() => {
+		loopThroughTitles();
+	})
 </script>
 
 <style>
-	h1, figure, p {
-		text-align: center;
-		margin: 0 auto;
+	/* section {
+		width: 75%;
+	} */
+
+	.title {
+		padding: .25rem .5rem;
+		background-color: #1A212C;
+		color: white;
+		border-radius: 3px;
 	}
 
-	h1 {
-		font-size: 2.8em;
-		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
+	:global(body.dark-mode) .title {
+		color: #1A212C;
+		background-color: #ffff;
 	}
 
-	figure {
-		margin: 0 0 1em 0;
+
+	.social-link {
+		color: #1A212C;
+		margin-right: 1rem;
 	}
 
-	img {
-		width: 100%;
-		max-width: 400px;
-		margin: 0 0 1em 0;
+	:global(.social-icon):hover {
+		transform: scale(1.2);
 	}
 
-	p {
-		margin: 1em auto;
+	:global(body.dark-mode) .social-link {
+		color: #ffff;
 	}
 
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
-	}
 </style>
 
+
 <svelte:head>
-	<title>Sapper project template</title>
+	<title>James C. Tucker</title>
 </svelte:head>
 
-<h1>Great success!</h1>
+<section class="intro">
+	<h2>Hi, I'm James.</h2>
+	<p>I'm a <span class="title">{ currentTitle }.</span></p>
+	<p>Welcome to my personal site, where I write about things like JavaScript, getting into technology, and entrepreneurship.</p>
+	<div>
+		<a class="social-link" href="https://twitter.com/tucker_dev"><TwitterIcon size="24" class="social-icon" /></a>
+		<a class="social-link" href="https://github.com/jamesctucker"><GithubIcon size="24" class="social-icon"/></a>
+		<a class="social-link" href="https://www.twitch.tv/jamestuckerdev"><TwitchIcon size="24" class="social-icon"/></a>
+		<a class="social-link" href="https://www.youtube.com/channel/UCwvTTrYq7ioW3GFrHbcWhRA?view_as=subscriber"><YoutubeIcon size="24" class="social-icon"/></a>
+	</div>
+</section>
 
-<figure>
-	<img alt="Success Kid" src="{successkid}">
-	<figcaption>Have fun with Sapper!</figcaption>
-</figure>
 
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
