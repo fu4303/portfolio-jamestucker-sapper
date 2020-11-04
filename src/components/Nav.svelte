@@ -1,60 +1,88 @@
 <script>
-	export let segment;
+import Button from '../components/DarkMode.svelte';
+import { MoonIcon, SunIcon } from 'svelte-feather-icons';
+
+let isDarkMode;
+
 </script>
 
 <style>
 	nav {
-		border-bottom: 1px solid rgba(255,62,0,0.1);
+		/* border-bottom: 1px solid rgba(255,62,0,0.1); */
 		font-weight: 300;
-		padding: 0 1em;
+		display: flex;
+		justify-content: space-between;
+		padding: 2em;
+		/* margin: 0 auto; */
+		align-items: center;
 	}
 
-	ul {
-		margin: 0;
-		padding: 0;
+	.nav-links {
+		display: flex;
+		align-items: center;
 	}
 
-	/* clearfix */
-	ul::after {
-		content: '';
-		display: block;
-		clear: both;
-	}
-
-	li {
-		display: block;
-		float: left;
-	}
-
-	[aria-current] {
-		position: relative;
-		display: inline-block;
-	}
-
-	[aria-current]::after {
-		position: absolute;
-		content: '';
-		width: calc(100% - 1em);
-		height: 2px;
-		background-color: rgb(255,62,0);
-		display: block;
-		bottom: -1px;
-	}
 
 	a {
 		text-decoration: none;
-		padding: 1em 0.5em;
+		padding-right: 1em;
 		display: block;
 	}
+
+	a:hover {
+		transform: scale(1.1);
+		text-decoration: underline;
+		text-decoration-color: #FF3F01;
+	}
+
+	.brand {
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	.brand:hover {
+		text-decoration: none;
+	}
+
+	/* dark mode styles */
+	:global(body) {
+		background-color: #ffff;
+		color: #1A212C;
+		transition: background-color 0.3s
+	}
+	:global(body) a {
+		color: #1A212C;
+		transition: background-color 0.3s
+	}
+	:global(body.dark-mode) {
+		background-color: #1A212C;
+		color: #ffff;
+	}
+
+	:global(body.dark-mode) a {
+		color: #ffff;
+		transition: background-color 0.3s
+	}
+
 </style>
 
 <nav>
-	<ul>
-		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">home</a></li>
-		<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">about</a></li>
-
+	<div class="nav-brand">
+		<a class="brand" href=".">JT</a>
+	</div>
+	<div class="nav-links">
+		<a href="about">about</a>
+		<a href="talks">talks</a>
+		<a href="uses">uses</a>
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">blog</a></li>
-	</ul>
+		<a rel=prefetch href="blog">blog</a>
+		<Button bind:isDarkMode={isDarkMode}>
+			{#if isDarkMode}
+				<SunIcon size="18" />
+			{:else}
+				<MoonIcon size="18"/>
+			{/if}
+		</Button>
+	</div>
 </nav>
