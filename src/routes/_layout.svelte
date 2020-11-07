@@ -10,7 +10,7 @@
 	}
 
 	:global(body) {
-		max-width: 42em;
+		max-width: 40em;
 		margin: 0 auto;
 		height: 100%;
 		display: flex;

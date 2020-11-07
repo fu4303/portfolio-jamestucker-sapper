@@ -32,12 +32,14 @@ let isDarkMode;
 	a:hover {
 		transform: scale(1.1);
 		text-decoration: underline;
-		text-decoration-color: #FF3F01;
+		text-decoration-color: #14AC83;
 	}
 
 	.brand {
 		font-size: 18px;
 		font-weight: 700;
+		font-family: "News Cycle", sans-serif;
+
 	}
 
 	.brand:hover {
@@ -51,7 +53,6 @@ let isDarkMode;
 		transition: background-color 0.3s
 	}
 	:global(body) a {
-		color: #1A212C;
 		transition: background-color 0.3s
 	}
 	:global(body.dark-mode) {
@@ -64,19 +65,24 @@ let isDarkMode;
 		transition: background-color 0.3s
 	}
 
+	.nav-link {
+		color: #14AC83;
+
+	}
+
 </style>
 
 <nav>
 	<div class="nav-brand">
-		<a class="brand" href=".">JT</a>
+		<a class="brand nav-link" href=".">JT</a>
 	</div>
 	<div class="nav-links">
-		<a href="about">about</a>
-		<a href="talks">talks</a>
-		<a href="uses">uses</a>
+		<a class="nav-link" href="about">about</a>
+		<a class="nav-link" href="talks">talks</a>
+		<a class="nav-link" href="uses">uses</a>
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<a rel=prefetch href="blog">blog</a>
+		<a class="nav-link" rel=prefetch href="blog">blog</a>
 		<Button bind:isDarkMode={isDarkMode}>
 			{#if isDarkMode}
 				<SunIcon size="18" />

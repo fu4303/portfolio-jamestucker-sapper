@@ -3,3 +3,4 @@
 </svelte:head>
 
 <h1>Uses</h1>
+<p>Coming soon!</p>

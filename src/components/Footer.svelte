@@ -6,11 +6,11 @@
     }
 
     a {
-        color: #FF3F01;
+        color: #14AC83;
     }
 
 </style>
 
 <footer>
-    <p>James Tucker - Happily over-engineered with <a href="https://sapper.svelte.dev">Sapper/Svelte</a></p>
+    <p>James Tucker © 2020 - Happily over-engineered with <a href="https://sapper.svelte.dev">Sapper/Svelte</a></p>
 </footer>

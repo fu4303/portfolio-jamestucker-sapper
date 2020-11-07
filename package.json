@@ -3,15 +3,21 @@
   "description": "TODO",
   "version": "0.0.1",
   "scripts": {
-    "dev": "sapper dev",
+    "dev": "sapper dev -p 8080",
     "build": "sapper build --legacy",
     "export": "sapper export --legacy",
     "start": "node __sapper__/build"
   },
   "dependencies": {
     "compression": "^1.7.1",
+    "date-fns": "^2.16.1",
+    "gray-matter": "^4.0.2",
+    "marked": "^1.2.2",
     "polka": "next",
-    "sirv": "^1.0.0"
+    "prismjs": "^1.22.0",
+    "reading-time": "^1.2.0",
+    "sirv": "^1.0.0",
+    "svelte-image": "^0.2.7"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",

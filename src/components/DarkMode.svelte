@@ -14,7 +14,8 @@ function toggle() {
 		color: #1A212C;
         padding: 1rem;
         display: flex;
-        align-items: center;
+		align-items: center;
+		border: none;
 		
 	}
 	:global(body.dark-mode) button {
