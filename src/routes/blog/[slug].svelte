@@ -50,7 +50,7 @@
   {/each}
   <h1>{post.title}</h1>
   <p>{post.printDate} - {post.printReadingTime}</p>
-  
+  <hr>
 </header>
 
 <article>
