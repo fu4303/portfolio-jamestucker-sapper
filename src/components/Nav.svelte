@@ -66,7 +66,7 @@ let isDarkMode;
 	}
 
 	.nav-link {
-		color: #1A212C;
+		color: #14AC83;
 	}
 
 </style>

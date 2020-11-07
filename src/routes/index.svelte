@@ -3,27 +3,27 @@
 	import { fade, fly } from 'svelte/transition';
 	import { TwitterIcon, GithubIcon, TwitchIcon, YoutubeIcon } from 'svelte-feather-icons'
 
-	const titles = ['software engineer', "husband", "dog dad", "former aspiring pastor", "youtuber", "livestreamer", "outdoor lover"];
-	let currentTitle = titles[0];
-	let index = 0;
+	// const titles = ['software engineer', "husband", "dog dad", "former aspiring pastor", "youtuber", "livestreamer", "outdoor lover"];
+	// let currentTitle = titles[0];
+	// let index = 0;
 	let visible = false;
 
-	const loopThroughTitles = () => {
-		setTimeout(() => {
-			if (index <= titles.length - 1) {
-				currentTitle = titles[index]
-				index++
-				loopThroughTitles();
-			} else {
-				index = 0;
-				loopThroughTitles();
-			}
-		}, 1000)
+	// const loopThroughTitles = () => {
+	// 	setTimeout(() => {
+	// 		if (index <= titles.length - 1) {
+	// 			currentTitle = titles[index]
+	// 			index++
+	// 			loopThroughTitles();
+	// 		} else {
+	// 			index = 0;
+	// 			loopThroughTitles();
+	// 		}
+	// 	}, 1000)
 
-	}
+	// }
 
 	onMount(() => {
-		loopThroughTitles();
+		// loopThroughTitles();
 		visible = true;
 	})
 
@@ -55,12 +55,12 @@
 		width: 75%;
 	} */
 
-	.title {
+	/* .title {
 		padding: .25rem .5rem;
 		background-color: #14AC83;
 		color: white;
 		border-radius: 3px;
-	}
+	} */
 
 	/* :global(body.dark-mode) .title {
 		color: #1A212C;
@@ -94,8 +94,8 @@
 	{#if visible}
 		<h2 in:typewriter>Hi, I'm James.</h2>
 		<div in:fly="{{ y: 200, duration: 2000 }}">
-			<p>It's really nice to meet you! I'm a <span class="title">{ currentTitle }.</span></p>
-			<p>I live in Minnesota with my lovely wife Megan and our fluffy dog daughter Solveig. I work as a software engineer at <a href="https://soona.co">soona</a> where we're building a really cool content creation platform</p>
+			<p>It's really nice to meet you!</p>
+			<p>I live in Minnesota with my lovely wife Megan and our fluffy dog daughter Solveig, and I work as a software engineer at <a href="https://soona.co">soona</a> where we're building a really cool content creation platform</p>
 			<p>Making things, continuously learning, and teaching others code are a few of my favorite things. When I'm not coding, you can probably find me spending time with my family, reading, playing ice hockey, or traipsing through the woods. 🌲</p>
 			<div>
 				<a class="social-link" href="https://twitter.com/tucker_dev"><TwitterIcon size="24" class="social-icon" /></a>
