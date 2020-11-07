@@ -95,7 +95,7 @@
 		<h2 in:typewriter>Hi, I'm James.</h2>
 		<div in:fly="{{ y: 200, duration: 2000 }}">
 			<p>It's really nice to meet you!</p>
-			<p>I live in Minnesota with my lovely wife Megan and our fluffy dog daughter Solveig, and I work as a software engineer at <a href="https://soona.co">soona</a> where we're building a really cool content creation platform</p>
+			<p>I live in Minnesota with my lovely wife Megan and our fluffy dog daughter Solveig, and I work as a software engineer at <a href="https://soona.co">soona</a> where we're building a really cool content creation platform.</p>
 			<p>Making things, continuously learning, and teaching others code are a few of my favorite things. When I'm not coding, you can probably find me spending time with my family, reading, playing ice hockey, or traipsing through the woods. 🌲</p>
 			<div>
 				<a class="social-link" href="https://twitter.com/tucker_dev"><TwitterIcon size="24" class="social-icon" /></a>
