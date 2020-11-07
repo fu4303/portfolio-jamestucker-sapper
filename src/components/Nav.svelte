@@ -66,8 +66,7 @@ let isDarkMode;
 	}
 
 	.nav-link {
-		color: #14AC83;
-
+		color: #1A212C;
 	}
 
 </style>
@@ -77,7 +76,6 @@ let isDarkMode;
 		<a class="brand nav-link" href=".">JT</a>
 	</div>
 	<div class="nav-links">
-		<a class="nav-link" href="about">about</a>
 		<a class="nav-link" href="talks">talks</a>
 		<a class="nav-link" href="uses">uses</a>
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches

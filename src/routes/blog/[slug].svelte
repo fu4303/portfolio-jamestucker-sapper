@@ -28,8 +28,7 @@
     font-size: 4rem;
   }
   .tag-btn {
-    background: #cb48b7;
-    color:white;
+    color: #14AC83;
     width: fit-content;
     padding: .2em .4em;
     border-radius: 3px;
@@ -46,11 +45,12 @@
 </svelte:head>
 
 <header>
-  <h1>{post.title}</h1>
-  <p>{post.printDate} - {post.printReadingTime}</p>
   {#each post.tags as tag, index}
     <p on:click={findPostsByTag(tag)} class="tag-btn">{tag}</p>
   {/each}
+  <h1>{post.title}</h1>
+  <p>{post.printDate} - {post.printReadingTime}</p>
+  
 </header>
 
 <article>

@@ -23,7 +23,9 @@ Don't copy-paste code without understanding why the code does what it does. It m
 
 This is a biggie for your career. No one knows what you need except for you - so don't expect your managers to read your brain. Need more support? Ask for it. Need a raise to cover growing expenses? Ask for it. Have a dream role in mind? Ask for it!
 
-A great opportunity for you to speak up for yourself is at 1:1s with your manager.
+A great opportunity for you to speak up for yourself is at 1:1s with your manager. If you need some ideas for what to talk about, here's a fantastic graphic by [Julia Evans](https://twitter.com/b0rk).
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">what to talk about in 1:1s<br><br>(permalink: <a href="https://t.co/BzuyBWgG1s">https://t.co/BzuyBWgG1s</a>) <a href="https://t.co/nUzBRphu1b">pic.twitter.com/nUzBRphu1b</a></p>&mdash; 🔎Julia Evans🔍 (@b0rk) <a href="https://twitter.com/b0rk/status/1300099772959907841?ref_src=twsrc%5Etfw">August 30, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## 4. Mentor Others
 
