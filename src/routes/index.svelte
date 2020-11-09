@@ -8,6 +8,7 @@
 	// let currentTitle = titles[0];
 	// let index = 0;
 	let visible = false;
+	let isTypingDone = false;
 
 	// const loopThroughTitles = () => {
 	// 	setTimeout(() => {
@@ -101,7 +102,7 @@
 <section class="intro">
 	{#if visible}
 		<h2 in:typewriter>Hi, I'm James.</h2>
-		<div in:fly="{{ x: 200, duration: 2000 }}">
+		<div in:fade>
 			<p>It's really nice to meet you!</p>
 			<p>I live in Minnesota with my lovely wife Megan and our fluffy dog daughter Solveig, and I work as a software engineer at <a href="https://soona.co">soona</a> where we're building a really cool content creation platform.</p>
 			<p>Making things, continuously learning, and teaching others code are a few of my favorite things. When I'm not coding, you can probably find me spending time with my family, reading, playing ice hockey, or traipsing through the woods. 🌲</p>
@@ -111,9 +112,8 @@
 				<a class="social-link" href="https://www.twitch.tv/jamestuckerdev"><TwitchIcon size="24" class="social-icon"/></a>
 				<a class="social-link" href="https://www.youtube.com/channel/UCwvTTrYq7ioW3GFrHbcWhRA?view_as=subscriber"><YoutubeIcon size="24" class="social-icon"/></a>
 			</div>
-		</div>
+		</div>	
 	{/if}
-	
 </section>
 
 
