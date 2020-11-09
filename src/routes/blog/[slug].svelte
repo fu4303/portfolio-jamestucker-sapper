@@ -15,12 +15,22 @@
 
 <script>
   import { goto } from '@sapper/app';
+  import Meta from './Meta.svelte'
 
   export let post
 
   function findPostsByTag(tag) {
     goto(`/blog?tag=${tag}`)
   }
+
+	
+	const metadata = {
+		title: post.title,
+		description: post.excerpt,
+		image: 'https://svelte.dev/images/twitter-card.png',
+		imageAlt: 'article image',
+		url: `jamestucker.dev/blog/${post.slug}`
+	}
 </script>
 
 <style>
