@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import { fade, fly } from 'svelte/transition';
-	import Meta from '../../components/Meta.svelte'
+	import Meta from '../components/Meta.svelte';
 	import { TwitterIcon, GithubIcon, TwitchIcon, YoutubeIcon } from 'svelte-feather-icons'
 
 	// const titles = ['software engineer', "husband", "dog dad", "former aspiring pastor", "youtuber", "livestreamer", "outdoor lover"];
@@ -101,7 +101,7 @@
 <section class="intro">
 	{#if visible}
 		<h2 in:typewriter>Hi, I'm James.</h2>
-		<div in:fly="{{ y: 200, duration: 2000 }}">
+		<div in:fly="{{ x: 200, duration: 2000 }}">
 			<p>It's really nice to meet you!</p>
 			<p>I live in Minnesota with my lovely wife Megan and our fluffy dog daughter Solveig, and I work as a software engineer at <a href="https://soona.co">soona</a> where we're building a really cool content creation platform.</p>
 			<p>Making things, continuously learning, and teaching others code are a few of my favorite things. When I'm not coding, you can probably find me spending time with my family, reading, playing ice hockey, or traipsing through the woods. 🌲</p>
