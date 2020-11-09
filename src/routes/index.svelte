@@ -95,9 +95,8 @@
 </style>
 
 
-<svelte:head>
-	<title>James C. Tucker</title>
-</svelte:head>
+<Meta {metadata}/>
+
 
 <section class="intro">
 	{#if visible}
