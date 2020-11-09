@@ -15,13 +15,16 @@
 
 <script>
   import { goto } from '@sapper/app';
-  import Meta from './Meta.svelte'
+  import { onMount } from 'svelte';
+  import Meta from '../../components/Meta.svelte'
 
   export let post
 
   function findPostsByTag(tag) {
     goto(`/blog?tag=${tag}`)
   }
+
+  onMount(() => console.log(post))
 
 	
 	const metadata = {
@@ -50,9 +53,7 @@
   }
 </style>
 
-<svelte:head>
-  <title>{post.title}</title>
-</svelte:head>
+<Meta {metadata}/>
 
 <header>
   {#each post.tags as tag, index}
