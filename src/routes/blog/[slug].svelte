@@ -23,9 +23,6 @@
   function findPostsByTag(tag) {
     goto(`/blog?tag=${tag}`)
   }
-
-  onMount(() => console.log(post))
-
 	
 	const metadata = {
 		title: post.title,

@@ -1,6 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import { fade, fly } from 'svelte/transition';
+	import Meta from '../../components/Meta.svelte'
 	import { TwitterIcon, GithubIcon, TwitchIcon, YoutubeIcon } from 'svelte-feather-icons'
 
 	// const titles = ['software engineer', "husband", "dog dad", "former aspiring pastor", "youtuber", "livestreamer", "outdoor lover"];
@@ -26,6 +27,14 @@
 		// loopThroughTitles();
 		visible = true;
 	})
+
+	const metadata = {
+		title: 'James C. Tucker',
+		description: 'James is a software engineer, writer, and public speaker. He loves teaching others code and helping them become better developers',
+		image: `https://jamestucker.dev/g/main-site-image.png`,
+		imageAlt: 'main site card photo',
+		url: 'https://jamestucker.dev'
+	}
 
 	function typewriter(node, { speed = 75 }) {
 		const valid = (

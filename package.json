@@ -1,6 +1,6 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "James C. Tucker",
+  "description": "Personal website of James C. Tucker",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev -p 8080",
