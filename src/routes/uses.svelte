@@ -4,4 +4,3 @@
 
 <h1>Uses</h1>
 <p>Coming soon!</p>
-<img src="headshot.jpg" alt="">

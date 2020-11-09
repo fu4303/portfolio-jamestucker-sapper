@@ -30,7 +30,7 @@
 	const metadata = {
 		title: post.title,
 		description: post.excerpt,
-		image: 'https://svelte.dev/images/twitter-card.png',
+		image: `https://jamestucker.dev/g/${post.slug}.png`,
 		imageAlt: 'article image',
 		url: `jamestucker.dev/blog/${post.slug}`
 	}
@@ -59,6 +59,7 @@
   {#each post.tags as tag, index}
     <p on:click={findPostsByTag(tag)} class="tag-btn">{tag}</p>
   {/each}
+  <img src="g/{post.slug}.png" alt="blog hero">
   <h1>{post.title}</h1>
   <p>{post.printDate} - {post.printReadingTime}</p>
   <hr>
