@@ -8,6 +8,7 @@
 
 <script>
   import { stores } from '@sapper/app';
+  import Meta from '../../components/Meta.svelte'
   const { page } = stores();
   
   let tag = $page.query.tag
@@ -17,6 +18,14 @@
   if (tag) {
     posts = posts.filter(post => post.tags.includes(tag))
   } 
+
+  const metadata = {
+		title: `James Tucker's Blog`,
+		description: 'James is a software engineer, writer, and public speaker. He loves teaching others code and helping them become better developers',
+		image: `https://jamestucker.dev/g/main-site-image.png`,
+		imageAlt: 'main site card photo',
+		url: 'https://jamestucker.dev/blog'
+	}
 
 </script>
 
@@ -28,9 +37,8 @@
 
 </style>
 
-<svelte:head>
-  <title>Blog</title>
-</svelte:head>
+<Meta {metadata}/>
+
 
   
   {#if tag}
