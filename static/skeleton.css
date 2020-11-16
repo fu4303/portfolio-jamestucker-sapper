@@ -183,10 +183,10 @@ html {
 }
 body {
   font-size: 1.75em; /* currently ems cause chrome bug misinterpreting rems on body element */
-  line-height: 1.4;
+  line-height: 1.7;
   font-weight: 400;
   font-family: "Anaheim", sans-serif;
-  color: #222;
+  color: #1a212c;
 }
 
 /* Typography
@@ -205,32 +205,32 @@ h6 {
 h1 {
   font-size: 4rem;
   line-height: 1.2;
-  letter-spacing: -0.1rem;
+  letter-spacing: 1px;
 }
 h2 {
   font-size: 3.6rem;
   line-height: 1.25;
-  letter-spacing: -0.1rem;
+  letter-spacing: 1px;
 }
 h3 {
   font-size: 3rem;
   line-height: 1.3;
-  letter-spacing: -0.1rem;
+  letter-spacing: 1px;
 }
 h4 {
   font-size: 2.4rem;
   line-height: 1.35;
-  letter-spacing: -0.08rem;
+  letter-spacing: 1px;
 }
 h5 {
   font-size: 1.8rem;
   line-height: 1.5;
-  letter-spacing: -0.05rem;
+  letter-spacing: 1px;
 }
 h6 {
   font-size: 1.5rem;
   line-height: 1.6;
-  letter-spacing: 0;
+  letter-spacing: 1px;
 }
 
 /* Larger than phablet */
@@ -257,6 +257,7 @@ h6 {
 
 p {
   margin-top: 0;
+  line-height: 1.7;
 }
 
 /* Buttons
@@ -417,20 +418,14 @@ li {
 
 /* Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* code {
-  padding: 0.2rem 0.5rem;
-  margin: 0 0.2rem;
-  font-size: 90%;
-  white-space: nowrap;
-  background: #f1f1f1;
-  border: 1px solid #e1e1e1;
-  border-radius: 4px;
+:not(pre) > code {
+  white-space: normal;
+  color: #263238;
+  background: #f8f8f2;
+  padding: 0.1rem 0.5rem;
+  border-radius: 3px;
+  font-family: Anaheim, sans-serif;
 }
-pre > code {
-  display: block;
-  padding: 1rem 1.5rem;
-  white-space: pre;
-} */
 
 /* Tables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -552,13 +547,25 @@ there.
 
 /* Custom styles */
 blockquote {
-  font-style: italic;
-  font-weight: 700;
-  margin-top: 24px;
-  margin-bottom: 48px;
+  background: #f9f9f9;
+  border-left: 10px solid #14ac83;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  color: #1a212c !important;
 }
 
+blockquote p {
+  display: inline;
+}
+
+/* images */
 img {
   width: 100%;
-  filter: drop-shadow(2px 4px 6px black);
+  filter: drop-shadow(1px 3px 6px black);
+}
+
+.blog-post-img {
+  margin: 2rem 0rem;
+  border: 1px dashed #14ac83;
+  padding: 0.5rem;
 }

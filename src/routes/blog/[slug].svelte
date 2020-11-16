@@ -48,14 +48,20 @@
   .tag-btn:hover {
     cursor: pointer;
   }
+
+  .tag-container {
+    display: flex;
+  }
 </style>
 
 <Meta {metadata}/>
 
 <header>
-  {#each post.tags as tag, index}
-    <p on:click={findPostsByTag(tag)} class="tag-btn">{tag}</p>
-  {/each}
+  <div class="tag-container">
+    {#each post.tags as tag, index}
+      <p on:click={findPostsByTag(tag)} class="tag-btn">{tag}</p>
+    {/each}
+  </div>
   <img src="g/{post.slug}.png" alt="blog hero">
   <h1>{post.title}</h1>
   <p>{post.printDate} - {post.printReadingTime}</p>
