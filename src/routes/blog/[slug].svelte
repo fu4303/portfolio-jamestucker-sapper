@@ -38,12 +38,16 @@
     font-size: 4rem;
   }
   .tag-btn {
-    color: #14AC83;
+    color: #030D22;
     width: fit-content;
     padding: .2em .4em;
     border-radius: 3px;
     font-size: .75em;
   }
+
+  :global(body.dark-mode) .tag-btn {
+    color: #ffd400;
+	}
 
   .tag-btn:hover {
     cursor: pointer;

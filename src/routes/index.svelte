@@ -79,16 +79,12 @@
 
 
 	.social-link {
-		color: #1A212C;
+		color: #ff2592;
 		margin-right: 1rem;
 	}
 
 	:global(.social-icon):hover {
 		transform: scale(1.2);
-	}
-
-	:global(body.dark-mode) .social-link {
-		color: #ffff;
 	}
 
 	

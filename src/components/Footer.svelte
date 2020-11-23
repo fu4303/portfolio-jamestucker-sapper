@@ -6,7 +6,7 @@
     }
 
     a {
-        color: #14AC83;
+        color: #ff2592;
     }
 
 </style>

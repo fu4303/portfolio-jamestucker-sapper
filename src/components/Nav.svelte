@@ -32,7 +32,7 @@ let isDarkMode;
 	a:hover {
 		transform: scale(1.1);
 		text-decoration: underline;
-		text-decoration-color: #14AC83;
+		text-decoration-color: #ff2592;
 	}
 
 	.brand {
@@ -49,24 +49,24 @@ let isDarkMode;
 	/* dark mode styles */
 	:global(body) {
 		background-color: #ffff;
-		color: #1A212C;
+		color: #030D22;
 		transition: background-color 0.3s
 	}
 	:global(body) a {
 		transition: background-color 0.3s
 	}
 	:global(body.dark-mode) {
-		background-color: #1A212C;
+		background-color: #030D22;
 		color: #ffff;
 	}
 
-	:global(body.dark-mode) a {
+	/* :global(body.dark-mode) a {
 		color: #ffff;
 		transition: background-color 0.3s
-	}
+	} */
 
 	.nav-link {
-		color: #14AC83;
+		color: #ff2592;
 	}
 
 </style>

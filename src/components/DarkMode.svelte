@@ -11,7 +11,7 @@ function toggle() {
 </button>
 <style>
 	button {
-		color: #1A212C;
+		color: #030D22;
         padding: 1rem;
         display: flex;
 		align-items: center;
@@ -19,6 +19,6 @@ function toggle() {
 		
 	}
 	:global(body.dark-mode) button {
-        color: white;
+        color: #ffd400;
 	}
 </style>

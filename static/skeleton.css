@@ -186,7 +186,7 @@ body {
   line-height: 1.7;
   font-weight: 400;
   font-family: "Anaheim", sans-serif;
-  color: #1a212c;
+  color: #030d22;
 }
 
 /* Typography
@@ -496,7 +496,7 @@ hr {
 /* Links */
 
 a {
-  color: #14ac83;
+  color: #ff2592;
   text-decoration: none;
 }
 
@@ -548,7 +548,7 @@ there.
 /* Custom styles */
 blockquote {
   background: #f9f9f9;
-  border-left: 10px solid #14ac83;
+  border-left: 10px solid #ffd400;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   color: #1a212c !important;
@@ -566,6 +566,6 @@ img {
 
 .blog-post-img {
   margin: 2rem 0rem;
-  border: 2px dashed #14ac83;
+  border: 2px dashed #ffd400;
   padding: 0.5rem;
 }
