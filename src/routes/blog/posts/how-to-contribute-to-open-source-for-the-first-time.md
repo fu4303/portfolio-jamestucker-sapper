@@ -48,7 +48,7 @@ Once you've found something to contribute, you'll want to fork the project.
 
 Forking the project creates an exact copy of it in your own Github repo.
 
-![Where to find forking option in Github](https://i.ibb.co/JddB5QQ/forking.png)
+<img src="https://i.ibb.co/JddB5QQ/forking.png" alt="forking option" class="blog-post-img" />
 
 ### 4. Clone the Project Locally
 
@@ -58,7 +58,7 @@ Next, clone the project to a local folder using the project's URL.
 
 This is where you find the URL.
 
-![Image of dropdown where you can clone the repo from](https://i.ibb.co/wB68f2h/cloning.png)
+<img src="https://i.ibb.co/wB68f2h/cloning.png" alt="clone the app" class="blog-post-img" />
 
 Now that the project is on your machine, open it with your editor. If you think your changes will take a while to make, make sure to sync your project copy with the original so that you're always up-to-date with changes. You can find the exact Git commands to do that [here](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork).
 
@@ -84,15 +84,15 @@ Go ahead and push your changes up to your forked Github repo with `git push -u o
 
 Go to your forked Github repo and open a pull request. **Note:** _if you've never made a pull request before, watch this [video](http://makeapullrequest.com/) by Kent Dodds to learn how._
 
-![Image of open PR](https://i.ibb.co/F49rWSq/open-pr.png)
+<img src="https://i.ibb.co/F49rWSq/open-pr.png" alt="open pr" class="blog-post-img" />
 
 Make sure your branch is pointing to the master branch of the original repo.
 
-![Point your branch to master](https://i.ibb.co/Y86qGwz/pointing.png)
+<img src="https://i.ibb.co/Y86qGwz/pointing.png" alt="point your branch to master" class="blog-post-img" />
 
 Now you're ready to add details to your PR. Make sure your title clearly conveys what the PR does. Add a description - if you're fixing an existing issue, make sure to reference it.
 
-![Image of detailed Pull Request](https://i.ibb.co/SftCHCN/detailed-pr.png)
+<img src="https://i.ibb.co/SftCHCN/detailed-pr.png" alt="detailed pull request" class="blog-post-img" />
 
 Once you're satisfied with your description, submit the PR for a review. Someone with authority to approve PRs will most likely review yours within a few days and do one of several things:
 
