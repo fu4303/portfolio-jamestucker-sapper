@@ -36,7 +36,7 @@ let isDarkMode;
 	}
 
 	.brand {
-		font-size: 18px;
+		font-size: 2.5rem;
 		font-weight: 700;
 		font-family: "News Cycle", sans-serif;
 
@@ -76,11 +76,12 @@ let isDarkMode;
 		<a class="brand nav-link" href=".">JT</a>
 	</div>
 	<div class="nav-links">
+		<a class="nav-link" rel=prefetch href="blog">blog</a>
 		<a class="nav-link" href="talks">talks</a>
 		<a class="nav-link" href="uses">uses</a>
+		<a class="nav-link" href="reading">reading</a>
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<a class="nav-link" rel=prefetch href="blog">blog</a>
 		<Button bind:isDarkMode={isDarkMode}>
 			{#if isDarkMode}
 				<SunIcon size="18" />

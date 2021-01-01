@@ -6,7 +6,7 @@
 <style>
 	main {
 		flex: 1 0 auto;
-		padding: 2em;
+		padding: 0em 2em;
 	}
 
 	:global(body) {
@@ -26,7 +26,6 @@
     	display: flex;
     	flex-direction: column;
 	}
-	
 </style>
 
 <Nav/>

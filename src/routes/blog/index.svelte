@@ -44,7 +44,7 @@
   {#if tag}
     <h1>{tag}</h1>
   {:else}
-  <h1>Blog</h1>
+  <h1 class="page-header">Blog</h1>
   <!-- <p class="mb-8">
     Welcome to my <a href="https://tomcritchlow.com/2019/02/17/building-digital-garden/" target="_blank" rel="noreferrer noopener">digital garden</a> 
     where I share what's currently on my mind. Some of my ideas have just been "planted" and need to be cultivated 

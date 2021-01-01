@@ -2,7 +2,7 @@
 	<title>Talks</title>
 </svelte:head>
 
-<h1>Talks</h1>
+<h1 class="page-header">Talks</h1>
 
 <table class="u-full-width">
   <thead>
@@ -41,7 +41,7 @@
   </tbody>
 </table>
 
-<h1>Podcasts</h1>
+<h1 class="page-header">Podcasts</h1>
 
 <table class="u-full-width">
   <thead>
